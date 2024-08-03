@@ -1,0 +1,15 @@
+.main {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 450px;
+  width: 100%;
+}
+
+.navlink {
+  text-decoration: none;
+}

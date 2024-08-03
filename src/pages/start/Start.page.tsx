@@ -1,4 +1,7 @@
-import { AppShell } from "@mantine/core";
+import { Flex } from "@mantine/core";
+import { Header } from "@src/pages/start/Header";
+import { PageContent } from "@src/pages/start/PageContent";
+import { PlayVideo } from "@src/pages/start/PlayVideo";
 import { Helmet } from "react-helmet";
 
 export function StartPage() {
@@ -7,7 +10,11 @@ export function StartPage() {
       <Helmet>
         <title>Start | Skin Quiz</title>
       </Helmet>
-      <AppShell.Main>Start Page</AppShell.Main>
+      <Flex>
+        <Header />
+        <PlayVideo />
+        <PageContent />
+      </Flex>
     </>
   );
 }

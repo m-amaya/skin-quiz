@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  left: 0;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.box {
+  text-align: center;
+}
+
+.title {
+  color: var(--mantine-color-text);
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1px var(--mantine-heading-outline);
+}
+
+.subtitle {
+  color: var(--mantine-heading-subtitle-text);
+}

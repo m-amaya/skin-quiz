@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  align-items: center;
+  background-color: var(--mantine-splitscreen-top-bg);
+  border-bottom: 5px dotted var(--mantine-color-border);
+  display: flex;
+  justify-content: center;
+}
+
+.bottom {
+  background-color: var(--mantine-splitscreen-bottom-bg);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.chipLabel {
+  background-color: var(--mantine-chip-bg) !important;
+  transition: background-color 300ms;
+
+  @mixin hover {
+    background-color: var(--mantine-chip-hover) !important;
+  }
+
+  &[data-checked] {
+    background-color: var(--mantine-chip-checked-bg) !important;
+  }
+}
